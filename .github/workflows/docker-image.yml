@@ -7,9 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Building Docker Image
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: afosne/Publish-Docker-Github-Action@master
         with:
           # 下方的name格式为：Docker Hub ID/自定义镜像名称
-          name: afosne/docker-koyeb
+          name: afosne/ubuntu
           username: '${{ secrets.DOCKER_USERNAME }}'
           password: '${{ secrets.DOCKER_PASSWORD }}'
